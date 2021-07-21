@@ -72,7 +72,35 @@
       border-bottom: none;
       margin: 10px auto;
     }
+    
+    .center {
+        text-align: center;
+    }
 
+    .pagination {
+         display: inline-block;
+         padding-top: 50px;
+    }
+
+    .pagination a {
+          color: black;
+          float: left;
+          padding: 10px;
+          text-decoration: none;
+          transition: background-color .3s;
+          border: 2px solid #A19882;
+          border-radius: 3px;
+          margin: 0 3px;
+    }
+
+    .pagination a.active {
+          background-color: #B5EAEA;
+          color: black;
+          border: 2px solid #B5EAEA;
+    }
+
+    .pagination a:hover:not(.active) {background-color: #CDF0EA;}
+      
     </style>
   </head>
   <body>
@@ -150,24 +178,14 @@
       </tr>
     </table>
 
-    <table class="page">
-      <tr>
-        <th>
-          <button type="button" name="0"><a href="https://kaneki-op.github.io/op.tv/">0</a></button>
-        </th>
-        <th>
-          <button type="button" name="1"><a href="#">1</a></button>
-        </th>
-        <th>
-          <button type="button" name="2"><a href="page2.html">2</a></button>
-        </th>
-        <th>
-          <button type="button" name="3"><a href="page3.html">3</a></button>
-        </th>
-      </tr>
-    </table>
-
+      <div class="center">
+        <div class="pagination">
+        <a href="https://kaneki-op.github.io/op.tv/">0</a>
+        <a href="#" class="active">1</a>
+        <a href="page2.html">2</a>
+        <a href="page3.html">3</a>
+        </div>
+      </div>
   </div>
-
   </body>
 </html>

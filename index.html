@@ -97,18 +97,19 @@
     .pagination a {
           color: black;
           float: left;
-          padding: 8px;
+          padding: 10px;
           text-decoration: none;
           transition: background-color .3s;
-          border: 1px solid #B5EAEA;
+          border: 2px solid #B5EAEA;
+          border-radius: 3px;
           margin: 0 3px;
-          padding-top: 10px;
+          padding-top: 50px;
     }
 
     .pagination a.active {
           background-color: #F38BA0;
           color: black;
-          border: 1px solid #F38BA0;
+          border: 2px solid #F38BA0;
     }
 
     .pagination a:hover:not(.active) {background-color: #FFBCBC;}
@@ -185,7 +186,7 @@
 
     <div class="center">
       <div class="pagination">
-        <a href="#">0</a>
+        <a href="#" class="active">0</a>
         <a href="pages/page1.html">1</a>
         <a href="pages/page2.html">2</a>
         <a href="pages/page3.html">3</a>
